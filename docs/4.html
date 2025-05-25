@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <style>
+            #head
+            {
+                background-position: bottom;
+                background-size: cover;
+            }
+            .img img
+            {
+                width: 115px;
+            }
+        </style>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            @keyframes fade
+            {
+                from
+                {
+                    opacity: 0;
+                    transform: scale(0.2);
+                }
+                to
+                {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            @keyframes facomel
+            {
+                from
+                {
+                    transform: translateX(-400px);
+                    opacity: 0;
+                }
+                to
+                {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
+            }
+            @keyframes facomer
+            {
+                from
+                {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+                to
+                {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
+            }
+            @keyframes comel
+            {
+                from
+                {
+                    transform: translateX(-400px);
+                }
+                to
+                {
+                    transform: translateX(0px);
+                }
+            }
+            @keyframes comer
+            {
+                from
+                {
+                    transform: translateX(400px);
+                }
+                to
+                {
+                    transform: translateX(0px);
+                }
+            }
+            .cl
+            {
+                animation: comel;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            }
+            .cr
+            {
+                animation: comer;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            }
+            .fblock
+            {
+                animation: fade 2s;  
+            }
+            .fablock
+            {
+                animation: fade;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            }
+            .facl
+            {
+                animation: facomel;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            }
+            .facr
+            {
+                animation: facomer;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            }
+            body
+            {
+                overflow-x: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+           <nav class="navbar fixed-top bg-transparent bg-gradient navbar-dark navbar-expand-lg d-flex" style="backdrop-filter: blur(100px);">
+            <div class="container-fluid d-flex">
+                <a href="#" class="navbar-brand ms-4">Santa</a>
+                <button type="button" class="btn navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse offcanvas offcanvas-end text-bg-dark" id="nav" data-bs-scroll="true" data-bs-backdrop="static">
+                    <div class="offcanvas-header">
+                        <button style="position: absolute;right:15px;top:15px" class="btn btn-outline-light" data-bs-dismiss="offcanvas"><i class="bi bi-x"></i></button>
+                    </div>
+                    <div class="navbar-nav container-fluid justify-content-around">
+                        <div class="navbar-nav offcanvas-body ms-2 nav-underline">
+                        <a href="" class="nav-link">Home</a>
+                        <a href="" class="nav-link">Information</a>
+                        <a href="" class="nav-link">About us</a>
+                        <a href="" class="nav-link">Culture</a>
+                        <a href="" class="nav-link">Contact Us</a>
+                        </div>
+                        <div class="navbar-nav offcanvas-footer d-inline ms-4 my-auto">
+                            <a href="" class="nav-link d-inline me-5">Follow Us</a>
+                            <a href="" class="nav-link d-inline me-4"><i class="bi bi-instagram"></i></a>
+                            <a href="" class="nav-link d-inline me-4"><i class="bi bi-twitter"></i></a>
+                            <a href="" class="nav-link d-inline me-4"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+           </nav>
+        
+            <section id="head"class="py-5 container-fluid   justify-content-center align-items-center d-grid" style="background-image: url(images/Background.png);height:200vh">
+                <div class="container-fluid my-5">
+                    <div class="row ms-5 my-5 fblock">
+                        <div class="col-12 fs-4 text-warning col-md-8">LET'S</div>
+                        <div class="col-12 h1 display-1 fw-bold text-light">Planing Your<br> Own Travel</div>
+                        <div class="col-12 text-light fs-5">Indonesia, a Southeast Aisn nation made up of thousands of volcanic<br>islands, is home to hundreds of ethnic groups speaking</div>
+                        <div class="col-12 mt-4">
+                            <button class="btn btn-warning px-4">Book a Trip</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-evenly row-gap-5 fablock">
+                            <div class="img  col-lg-2 col-md-4 col-6 text-center">
+                                <img src="images/nap1.jpg" class="img-fluid rounded-pill">
+                                <div class="text-center text-light pt-2">Ski tours</div>
+
+                            </div>
+                            <div class="img col-lg-2 col-md-4 col-6 text-center">
+                                <img src="images/nap2.jpg" class="img-fluid rounded-pill">
+                                <div class=" text-light pt-2">Excursion tours</div>
+
+                            </div>
+                            <div class="img col-lg-2 col-md-4 col-6 text-center">
+                                <img src="images/nap3.jpg" class="img-fluid rounded-pill">2
+                                <div class="text-center text-light pt-2">Shop tours</div>
+
+                            </div>
+                            <div class="img col-lg-2 col-md-4 col-6 text-center">
+                                <img src="images/nap4.jpg" class="img-fluid rounded-pill">
+                                <div class="text-center text-light pt-2">SPA tours</div>
+
+                            </div>
+                            <div class="img col-lg-2 col-md-4 col-6 text-center" >
+                                <img src="images/nap5.jpg" class="img-fluid rounded-pill">
+                                <div class="text-center text-light pt-2">Wedding tours</div>
+
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid bg-black pb-5 h-100 ">
+                <div class="row justify-content-around">
+                    <div class="col-lg-5 col-md-6 col-12 cl">
+                        <img src="images/h1.png" class="img-fluid rounded-5">
+                    </div>
+                    <div class="col-lg-5 col-md-6 mt-5 col-12 cr">
+                        <div class="fs-2 text-warning mb-5">EAST NUSA TENGGA</div>
+                        <div class="display-3 fw-bold text-light">Have You Enjoyed Your Holiday</div>
+                        <div class=" text-light mt-5 fs-5 fw-normal" style="line-height: 40px;">
+                            You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism. The beautiful waters of Komodo will make you meet many travelers from other countries.</div>
+                            <button class="btn btn-warning px-4 mt-5 py-2">Read More</button>
+                    </div>
+                </div>
+
+            </section>
+            <section class="container-fluid bg-black h-100 pb-5 " >
+                <div class="row g-5 fablock d-flex justify-content-center">
+                    <div class="col-12 display-3 fw-bold text-light text-center mb-5">Popular Tours</div>
+                    <div class="col-lg-4 col-md-6 px-5 fablock ">
+                        <div class="card border-0">
+                            <div class="card-img card-img-top bg-black ">
+                                <img src="images/t1.jpg" alt="" class="img-fluid bg-black rounded-4" style="opacity: 0.7;">
+                            </div>
+                            <div class="card-img-overlay fablock">
+                                <div class="card-title text-light position-absolute fs-4" style="bottom: 100px;">East Java</div>
+                                <div class="card-title text-light position-absolute fs-4 fw-bold" style="bottom: 60px;">Mount Bromo</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 px-5 fablock">
+                        <div class="card border-0 bg-black">
+                            <div class="card-img card-img-top bg-black">
+                                <img src="images/t2.jpg" alt="" class="img-fluid bg-black rounded-4" style="opacity: 0.7;">
+                            </div>
+                            <div class="card-img-overlay fablock">
+                                <div class="card-title text-light position-absolute fs-4" style="bottom: 100px;">East Java</div>
+                                <div class="card-title text-light position-absolute fs-4 fw-bold" style="bottom: 60px;">Mount Bromo</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  px-5 fablock">
+                        <div class="card border-0">
+                            <div class="card-img card-img-top bg-black ">
+                                <img src="images/t3.jpg" alt="" class="img-fluid bg-black rounded-4" style="opacity: 0.7;">
+                            </div>
+                            <div class="card-img-overlay fablock">
+                                <div class="card-title text-light position-absolute fs-4" style="bottom: 100px;">East Java</div>
+                                <div class="card-title text-light position-absolute fs-4 fw-bold" style="bottom: 60px;">Mount Bromo</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-warning px-5 py-2">See Tours</button>
+                    </div>
+                </div>
+            </section>
+            <section class=" container-fluid bg-black">
+                <div class="container-fluid bg-black">
+                    <div class="row py-5 justify-content-around align-items-center">
+                        <div class="col-lg-5 col-md-6 col-12 mb-5 facl">
+                            <div class="text-warning display-6 mb-5">INDONESIAN CULTURE</div>
+                            <div class="display-2 fw-bold text-light">Our Culture Here is Very Friendly To People</div>
+                            <div class="text-light my-5 fs-5">
+                                known for his politeness, manners and gentleness. This becomes
+                                a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.</div>
+                                <button class="btn btn-warning px-5 py-2">Read More</button>
+                        </div>
+                        <div class="col-lg-5 col-md-6  col-12 facr">
+                            <img src="images/c1.png" class=" img-fluid rounded-4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <footer class="container-fluid bg-black h-100 pb-5">
+            <div class="row ms-5 d-flex flex-wrap">
+            <div class="col-lg-6 col-md-6 col-12 mb-5">
+                <div class="display-3 fw-bold text-light mb-3">Ready To Explore?</div>
+                <div class="fs-5 text-light">let's go on Vacation, Make Your day...</div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 ">
+                <input class="form-control py-2 " placeholder="Enter Your Email Address" >
+            </div>
+            <div class="col-lg-2 col-md-2 col-6">
+                <button class="btn btn-warning px-4 py-2">Get Started</button>
+            </div>
+        </div>
+        <div class="row mx-5 mt-4">
+            <div class="col-md-3 col-12">
+                <div class="text-light mb-3">Services</div>
+                <div class="text-light-emphasis mb-2">Email Marketing</div>
+                <div class="text-light-emphasis mb-2">Campaigns</div>
+                <div class="text-light-emphasis mb-2">Branding</div>
+                <div class="text-light-emphasis mb-2">Offline</div>
+
+            </div>
+            <div class="col-md-3 col-12 mt-4">
+                <div class="text-light mb-3">About</div>
+                <div class="text-light-emphasis mb-2">Our Story</div>
+                <div class="text-light-emphasis mb-2">Benefits</div>
+                <div class="text-light-emphasis mb-2">Team</div>
+                <div class="text-light-emphasis mb-2">Careers</div>
+
+            </div>
+            <div class="col-md-3 col-12 mt-4">
+                <div class="text-light mb-3">Help</div>
+                <div class="text-light-emphasis mb-2">FAQs</div>
+                <div class="text-light-emphasis mb-2">Contact Us</div>
+               
+
+            </div>
+            <div class="col-md-3 col-12 mt-4">
+                <div class="text-light mb-3">Social</div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-2">
+                        <button class="btn btn-dark rounded-pill"><i class="bi bi-instagram"></i></button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-dark rounded-pill"><i class="bi bi-twitter"></i></button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-dark rounded-pill"><i class="bi bi-facebook"></i></button>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+
+            
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
